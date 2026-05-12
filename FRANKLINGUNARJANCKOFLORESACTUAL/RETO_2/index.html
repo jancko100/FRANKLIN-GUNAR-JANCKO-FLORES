@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réplica Box Model</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    
+    .margin-box{
+      background: orange;
+      padding: 30px; 
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .margin-text{
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    
+    .border-box{
+      border: 10px solid #333;
+      background: #1e90ff;
+      position: relative;
+    }
+
+    .border-text{
+      position: absolute;
+      top: -35px;
+      right: 0;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+   
+    .padding-box{
+      padding: 25px;
+      position: relative;
+    }
+
+    .padding-text{
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+   
+    .content-box{
+      width: 350px;
+      height: 130px;
+      background: #2ecc71;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="margin-box">
+    <span class="margin-text">Margin: 30px</span>
+
+    <div class="border-box">
+      <span class="border-text">Border: 10px</span>
+
+      <div class="padding-box">
+        <span class="padding-text">Padding: 25px</span>
+
+        <div class="content-box">
+          [FRANKLIN-GUNAR-JANCKO-FLORES]
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+*<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Desglose</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 30px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        td, th{
+            border: 2px solid black;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .titulo{
+            background-color: #f2f2f2;
+            font-size: 28px;
+        }
+
+        .datos{
+            background-color: #d9d9d9;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+
+        .total{
+            background-color: #f2f2f2;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Encabezado -->
+        <tr>
+            <th colspan="8" class="titulo">
+                DESGLOSE DE NOMBRES
+            </th>
+        </tr>
+
+        <!-- Letras -->
+        <tr>
+            <td rowspan="2" class="datos">DATOS</td>
+
+            <td>G</td>
+            <td>U</td>
+            <td>N</td>
+            <td>A</td>
+            <td>R</td>
+        </tr>
+
+        <!-- Total -->
+        <tr>
+            <td colspan="5" class="total">
+                TOTAL: 5 LETRAS
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>*
